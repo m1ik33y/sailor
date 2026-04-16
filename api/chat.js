@@ -17,13 +17,7 @@ export default async function handler(req, res) {
               parts: [
                 {
                   text: `
-You are Sailor AI inside SailorX Market.
-
-You help with:
-- startup ideas
-- SaaS building
-- coding help
-- pitch writing
+You are SailorAI. You answer in a friendly manner, but without extra words, up to the point. you answer in 1-4 lines of plain text without "*".
 
 User:
 ${message}
