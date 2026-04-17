@@ -573,6 +573,9 @@ input[type=range]{accent-color:var(--text);height:4px}
 
 /* Responsive */
 @media(max-width:768px){
+  .sailor-bubble {
+  max-width: 400px;
+  }
   #sidebar{display:none}
   #bottombar{display:block}
   #main{padding-bottom:72px}
@@ -1096,6 +1099,13 @@ function navigate(page) {
   document.getElementById('topbar-title').textContent = titles[page] || page;
 
   if (page === 'profile') renderProfile();
+
+  if (page === 'sailor') {
+  setTimeout(() => {
+    const input = document.getElementById('sailor-input');
+    if (input) input.focus();
+  }, 100);
+}
 
   document.getElementById('fab-menu').classList.remove('open');
 
